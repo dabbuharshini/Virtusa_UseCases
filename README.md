@@ -1,6 +1,6 @@
-# Pre-Training & Mini Project Repository
+# Mini Project & Use Cases 
 
-This repository contains projects developed during **Pre-Training** and **Mini Project Use Cases**, implemented using **Java, SQL, and Python**.
+This repository contains projects developed during **Mini Project** and **Use Cases**, implemented using **Java, SQL, and Python**.
 Each section demonstrates practical problem-solving and real-world applications.
 
 ---
