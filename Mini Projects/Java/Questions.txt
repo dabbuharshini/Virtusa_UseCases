@@ -1,0 +1,19 @@
+What is Java?|Programming Language,Operating System,Database,Compiler|1
+Which concept is used for data hiding?|Encapsulation,Inheritance,Polymorphism,Abstraction|1
+Which keyword is used to inherit a class in Java?|this,super,extends,implements|3
+Which method is the entry point of Java program?|start(),main(),run(),init()|2
+Which of these is not a primitive datatype?|int,float,String,boolean|3
+Which concept allows method overloading?|Polymorphism,Encapsulation,Abstraction,Inheritance|1
+Which keyword is used to create an object?|new,create,class,object|1
+Which access modifier makes data private?|public,protected,private,default|3
+Which loop is used when number of iterations is known?|while,do-while,for,foreach|3
+Which collection allows duplicate elements?|Set,List,Map,None|2
+Which exception occurs when dividing by zero?|IOException,ArithmeticException,NullPointerException,ClassNotFoundException|2
+Which package is used for file input in Java?|java.util,java.io,java.lang,java.sql|2
+Which keyword is used to define a constant?|static,final,const,constant|2
+Which concept is achieved using interfaces?|Multiple Inheritance,Encapsulation,Abstraction,Polymorphism|1
+Which operator is used for comparison?|=,==,!=,Both 2 and 3|4
+which is not an access modifier|this,private,public,default|1
+Which allows key value pair elements?|Set,List,Map,None|3
+Which is not a pillar of java?|Inheritance,Interface,Polymorphism,Encapsulation|2
+Where memory is allocated when string is created using string literals?|Heap,Stack,String Pool,None|3
