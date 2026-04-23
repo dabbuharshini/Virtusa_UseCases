@@ -14,7 +14,7 @@ Each section demonstrates practical problem-solving and real-world applications.
 
 ---
 
-# Section 1: Pre-Training Projects
+# Section 1: Pre-Training Mini Projects
 
 ---
 
