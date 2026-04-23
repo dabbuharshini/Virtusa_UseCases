@@ -24,11 +24,11 @@ Each section demonstrates practical problem-solving and real-world applications.
 An interactive quiz system where users can take quizzes and receive automated evaluation.
 
 <p align="center">
-  <img src="outputs/Miniproject_Outputs/java-admin.png" width="45%" />
-  <img src="outputs/Miniproject_Outputs/java-user(questions1).png" width="45%" />
-  <img src="outputs/Miniproject_Outputs/java-user(questions2).png" width="45%" />
-  <img src="outputs/Miniproject_Outputs/java-user(questions3).png" width="45%" />
-  <img src="outputs/Miniproject_Outputs/java-user(questions4).png" width="45%" />
+  <img src="Outputs/Miniproject_Outputs/java-admin.png" width="45%" />
+  <img src="Outputs/Miniproject_Outputs/java-user(questions1).png" width="45%" />
+  <img src="Outputs/Miniproject_Outputs/java-user(questions2).png" width="45%" />
+  <img src="Outputs/Miniproject_Outputs/java-user(questions3).png" width="45%" />
+  <img src="Outputs/Miniproject_Outputs/java-user(questions4).png" width="45%" />
 </p>
 
 ---
@@ -50,7 +50,7 @@ ORDER BY total_sold DESC;
 ```
 
 <p align="center">
-  <img src="outputs/Miniproject_Outputs/SQL_query1.png" width="70%" />
+  <img src="Outputs/Miniproject_Outputs/SQL_query1.png" width="70%" />
 </p>
 
 ```sql
@@ -65,7 +65,7 @@ ORDER BY total_spent DESC;
 ```
 
 <p align="center">
-  <img src="outputs/Miniproject_Outputs/SQL_query2.png" width="70%" />
+  <img src="Outputs/Miniproject_Outputs/SQL_query2.png" width="70%" />
 </p>
 
 ```sql
@@ -79,7 +79,7 @@ GROUP BY MONTH(o.order_date);
 ```
 
 <p align="center">
-  <img src="outputs/Miniproject_Outputs/SQL_query3.png" width="70%" />
+  <img src="Outputs/Miniproject_Outputs/SQL_query3.png" width="70%" />
 </p>
 
 ```sql
@@ -91,7 +91,7 @@ GROUP BY p.category;
 ```
 
 <p align="center">
-  <img src="outputs/Miniproject_Outputs/SQL_query4.png" width="70%" />
+  <img src="Outputs/Miniproject_Outputs/SQL_query4.png" width="70%" />
 </p>
 
 ```sql
@@ -104,7 +104,7 @@ WHERE customer_id NOT IN (
 ```
 
 <p align="center">
-  <img src="outputs/Miniproject_Outputs/SQL_query5.png" width="70%" />
+  <img src="Outputs/Miniproject_Outputs/SQL_query5.png" width="70%" />
 </p>
 
 ---
@@ -124,9 +124,9 @@ A tool to track daily expenses and analyze spending behavior.
 **Output:**
 
 <p align="center">
-  <img src="outputs/Miniproject_Outputs/python1.png" width="70%" />
-  <img src="outputs/Miniproject_Outputs/python2.png" width="70%" />
-  <img src="outputs/Miniproject_Outputs/python3.png" width="70%" />
+  <img src="Outputs/Miniproject_Outputs/python1.png" width="70%" />
+  <img src="Outputs/Miniproject_Outputs/python2.png" width="70%" />
+  <img src="Outputs/Miniproject_Outputs/python3.png" width="70%" />
 </p>
 
 > Helps users understand spending patterns and optimize expenses
@@ -152,7 +152,7 @@ A billing system that calculates electricity/water bills based on usage slabs.
 **Output:**
 
 <p align="center">
-  <img src="outputs/Usecases_Outputs/Java.png" width="70%" />
+  <img src="Outputs/Usecases_Outputs/Java.png" width="70%" />
 </p>
 
 ---
@@ -172,7 +172,7 @@ WHERE ActualDeliverDate > promisedDate;
 ```
 
 <p align="center">
-  <img src="outputs/Usecases_Outputs/SQL_query1.png" width="70%" />
+  <img src="Outputs/Usecases_Outputs/SQL_query1.png" width="70%" />
 </p>
 
 ```sql
@@ -185,7 +185,7 @@ GROUP BY partner_ID;
 ```
 
 <p align="center">
-  <img src="outputs/Usecases_Outputs/SQL_query2.png" width="70%" />
+  <img src="Outputs/Usecases_Outputs/SQL_query2.png" width="70%" />
 </p>
 
 ```sql
@@ -199,7 +199,7 @@ LIMIT 1;
 ```
 
 <p align="center">
-  <img src="outputs/Usecases_Outputs/SQL_query3.png" width="70%" />
+  <img src="Outputs/Usecases_Outputs/SQL_query3.png" width="70%" />
 </p>
 
 ```sql
@@ -219,7 +219,7 @@ ORDER BY DelayedDelivery ASC;
 ```
 
 <p align="center">
-  <img src="outputs/Usecases_Outputs/SQL_query4.png" width="70%" />
+  <img src="Outputs/Usecases_Outputs/SQL_query4.png" width="70%" />
 </p>
 
 ---
@@ -239,7 +239,7 @@ A content moderation tool that filters harmful words and extracts links.
 **Output:**
 
 <p align="center">
-  <img src="outputs/Usecases_Outputs/python.png" width="70%" />
+  <img src="Outputs/Usecases_Outputs/python.png" width="70%" />
 </p>
 
 > Demonstrates automation of content filtering and safety mechanisms
