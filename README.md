@@ -24,11 +24,11 @@ Each section demonstrates practical problem-solving and real-world applications.
 An interactive quiz system where users can take quizzes and receive automated evaluation.
 
 <p align="center">
-  <img src="Outputs/Miniproject_Outputs/java-admin.png" width="45%" />
-  <img src="Outputs/Miniproject_Outputs/java-user(questions1).png" width="45%" />
-  <img src="Outputs/Miniproject_Outputs/java-user(questions2).png" width="45%" />
-  <img src="Outputs/Miniproject_Outputs/java-user(questions3).png" width="45%" />
-  <img src="Outputs/Miniproject_Outputs/java-user(questions4).png" width="45%" />
+  <img src="Outputs/Miniproject_Outputs/Java-admin.png" width="45%" />
+  <img src="Outputs/Miniproject_Outputs/Java-user(questions1).png" width="45%" />
+  <img src="Outputs/Miniproject_Outputs/Java-user(questions2).png" width="45%" />
+  <img src="Outputs/Miniproject_Outputs/Java-user(questions3).png" width="45%" />
+  <img src="Outputs/Miniproject_Outputs/Java-user(questions4).png" width="45%" />
 </p>
 
 ---
