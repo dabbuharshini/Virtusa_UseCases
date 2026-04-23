@@ -1,4 +1,4 @@
-#  Pre-Training & Mini Project Repository
+# Pre-Training & Mini Project Repository
 
 This repository contains projects developed during **Pre-Training** and **Mini Project Use Cases**, implemented using **Java, SQL, and Python**.
 Each section demonstrates practical problem-solving and real-world applications.
@@ -7,20 +7,20 @@ Each section demonstrates practical problem-solving and real-world applications.
 
 ## Project Overview
 
-*  Multi-technology implementation (Java, SQL, Python)
-*  Covers real-world use cases and business problems
-*  Includes data processing, backend logic, and database analysis
-*  Designed for learning, practice, and interviews
+* Multi-technology implementation (Java, SQL, Python)
+* Covers real-world use cases and business problems
+* Includes data processing, backend logic, and database analysis
+* Designed for learning, practice, and interviews
 
 ---
 
-#  Section 1: Pre-Training Projects
+# Section 1: Pre-Training Projects
 
 ---
 
 ## ☕ Java – Online Quiz System
 
-**Description:**  
+**Description:**
 An interactive quiz system where users can take quizzes and receive automated evaluation.
 
 <p align="center">
@@ -31,49 +31,82 @@ An interactive quiz system where users can take quizzes and receive automated ev
   <img src="outputs/Miniproject_Outputs/java-user(questions4).png" width="45%" />
 </p>
 
-
 ---
 
-##  SQL – Online Retail Sales Analysis
+## SQL – Online Retail Sales Analysis
 
-**Description:**  
+**Description:**
 A relational database system to analyze retail sales and generate insights.
-**Output:**
-```sql
--- Top-selling products in order--
-select p.product_name,sum(ord_it.quantity) as total_sold from order_items ord_it 
-join products p on ord_it.product_id=p.product_id group by p.product_name order by total_sold desc;
-<p align="center"> <img src="outputs/Miniproject_Outputs/SQL_query1.png" width="70%" /> </p>
+
+### Queries & Outputs
 
 ```sql
--- most valuable customers
-select c.customer_name,sum(p.price*oi.quantity) as total_spent from customers c
-join orders o on c.customer_id=o.customer_id
-join order_items oi on o.order_id=oi.order_id
-join products p on oi.product_id=p.product_id
-group by c.customer_name
-order by total_spent desc;
-<p align="center"> <img src="outputs/Miniproject_Outputs/SQL_query2.png" width="70%" /> </p>
+-- Top-selling products
+SELECT p.product_name, SUM(ord_it.quantity) AS total_sold
+FROM order_items ord_it
+JOIN products p ON ord_it.product_id = p.product_id
+GROUP BY p.product_name
+ORDER BY total_sold DESC;
+```
+
+<p align="center">
+  <img src="outputs/Miniproject_Outputs/SQL_query1.png" width="70%" />
+</p>
+
+```sql
+-- Most valuable customers
+SELECT c.customer_name, SUM(p.price * oi.quantity) AS total_spent
+FROM customers c
+JOIN orders o ON c.customer_id = o.customer_id
+JOIN order_items oi ON o.order_id = oi.order_id
+JOIN products p ON oi.product_id = p.product_id
+GROUP BY c.customer_name
+ORDER BY total_spent DESC;
+```
+
+<p align="center">
+  <img src="outputs/Miniproject_Outputs/SQL_query2.png" width="70%" />
+</p>
 
 ```sql
 -- Monthly revenue
-select month(o.order_date) as month,sum(p.price*oi.quantity) as revenue from orders o
-join order_items oi on o.order_id=oi.order_id
-join products p on oi.product_id=p.product_id
-group by month(o.order_date);
-<p align="center"> <img src="outputs/Miniproject_Outputs/SQL_query3.png" width="70%" /> </p>
+SELECT MONTH(o.order_date) AS month,
+       SUM(p.price * oi.quantity) AS revenue
+FROM orders o
+JOIN order_items oi ON o.order_id = oi.order_id
+JOIN products p ON oi.product_id = p.product_id
+GROUP BY MONTH(o.order_date);
+```
+
+<p align="center">
+  <img src="outputs/Miniproject_Outputs/SQL_query3.png" width="70%" />
+</p>
 
 ```sql
--- category-wise sales analysis 
-select p.category,sum(oi.quantity) as total_sales from order_items oi
-join products p on oi.product_id=p.product_id
-group by p.category;
-<p align="center"> <img src="outputs/Miniproject_Outputs/SQL_query4.png" width="70%" /> </p>
+-- Category-wise sales
+SELECT p.category, SUM(oi.quantity) AS total_sales
+FROM order_items oi
+JOIN products p ON oi.product_id = p.product_id
+GROUP BY p.category;
+```
+
+<p align="center">
+  <img src="outputs/Miniproject_Outputs/SQL_query4.png" width="70%" />
+</p>
 
 ```sql
 -- Inactive customers
-select customer_name from customers where customer_id not in(select distinct customer_id from orders);
-<p align="center"> <img src="outputs/Miniproject_Outputs/SQL_query5.png" width="70%" /> </p>
+SELECT customer_name
+FROM customers
+WHERE customer_id NOT IN (
+    SELECT DISTINCT customer_id FROM orders
+);
+```
+
+<p align="center">
+  <img src="outputs/Miniproject_Outputs/SQL_query5.png" width="70%" />
+</p>
+
 ---
 
 ## Python – Smart Expense Tracker
@@ -89,22 +122,22 @@ A tool to track daily expenses and analyze spending behavior.
 * Visualization using charts
 
 **Output:**
-* Adding and viewing Expenses
-<p align="center"> <img src="outputs/Miniproject_Outputs/python1.png" width="70%" /> </p>
-* Filtering the Expenses by category and Monthly summary
-<p align="center"> <img src="outputs/Miniproject_Outputs/python2.png" width="70%" /> </p>
-* Category analysis and showing chart
-<p align="center"> <img src="outputs/Miniproject_Outputs/python3.png" width="70%" /> </p>
 
-> Helps users understand spending patterns and optimize expenses 
+<p align="center">
+  <img src="outputs/Miniproject_Outputs/python1.png" width="70%" />
+  <img src="outputs/Miniproject_Outputs/python2.png" width="70%" />
+  <img src="outputs/Miniproject_Outputs/python3.png" width="70%" />
+</p>
 
----
-
-#  Section 2: Mini Project Use Cases
+> Helps users understand spending patterns and optimize expenses
 
 ---
 
-##  Java – SmartPay Utility Biller
+# Section 2: Mini Project Use Cases
+
+---
+
+## Java – SmartPay Utility Biller
 
 **Description:**
 A billing system that calculates electricity/water bills based on usage slabs.
@@ -117,8 +150,11 @@ A billing system that calculates electricity/water bills based on usage slabs.
 * Digital receipt generation
 
 **Output:**
-* SmartPay utility Billing System
-<p align="center"> <img src="outputs/Usecases_Outputs/Java.png" width="70%" /> </p>
+
+<p align="center">
+  <img src="outputs/Usecases_Outputs/Java.png" width="70%" />
+</p>
+
 ---
 
 ## SQL – E-Commerce Logistics Tracker
@@ -126,46 +162,66 @@ A billing system that calculates electricity/water bills based on usage slabs.
 **Description:**
 A logistics tracking system to monitor shipments and analyze delivery performance.
 
-**Features:**
+### Queries & Outputs
 
-* Shipment tracking
-* Delay detection
-* Partner performance ranking
-* Delivery analytics
-
-**Output:**
 ```sql
 -- Delayed Shipment Delivery
-select * from shipments where ActualDeliverDate>promisedDate;
-<p align="center"> <img src="outputs/Usecases_Outputs/SQL_query1.png" width="70%" /> </p>
+SELECT *
+FROM shipments
+WHERE ActualDeliverDate > promisedDate;
+```
+
+<p align="center">
+  <img src="outputs/Usecases_Outputs/SQL_query1.png" width="70%" />
+</p>
 
 ```sql
 -- Performance Ranking
-select partner_ID,
-count(Case when status="Delivered" then 1 END) as Delivered,
-count(Case when status="Returned" then 1 END) as Returned 
-from shipments group by partner_ID;
-<p align="center"> <img src="outputs/Usecases_Outputs/SQL_query2.png" width="70%" /> </p>
+SELECT partner_ID,
+       COUNT(CASE WHEN status = 'Delivered' THEN 1 END) AS Delivered,
+       COUNT(CASE WHEN status = 'Returned' THEN 1 END) AS Returned
+FROM shipments
+GROUP BY partner_ID;
+```
+
+<p align="center">
+  <img src="outputs/Usecases_Outputs/SQL_query2.png" width="70%" />
+</p>
 
 ```sql
 -- Zone filtering
-select dest_city,count(*) as TotalOrders from shipments
-where orderedDate>=curdate()-interval 30 day
-group by dest_city
-order by TotalOrders desc 
-limit 1;
-<p align="center"> <img src="outputs/Usecases_Outputs/SQL_query3.png" width="70%" /> </p>
+SELECT dest_city, COUNT(*) AS TotalOrders
+FROM shipments
+WHERE orderedDate >= CURDATE() - INTERVAL 30 DAY
+GROUP BY dest_city
+ORDER BY TotalOrders DESC
+LIMIT 1;
+```
+
+<p align="center">
+  <img src="outputs/Usecases_Outputs/SQL_query3.png" width="70%" />
+</p>
 
 ```sql
--- Performance score card
-select p.partner_name,count(s.ship_ID) as TotalShipments,
-count(case when s.ActualDeliverDate<=s.promisedDate then 1 END) as OntimeDelivery,
-count(case when s.ActualDeliverDate>s.promisedDAte then 1 END) as DelayedDelivery,
-round((count(case when s.ActualDeliverDate<=s.promisedDate then 1 END)*100.0)/count(*),2) as SuccessRate
-from partners p join 
-shipments s on p.partner_ID=s.partner_ID
-group by p.partner_name order by DelayedDelivery ASC;
-<p align="center"> <img src="outputs/Usecases_Outputs/SQL_query4.png" width="70%" /> </p>
+-- Performance scorecard
+SELECT p.partner_name,
+       COUNT(s.ship_ID) AS TotalShipments,
+       COUNT(CASE WHEN s.ActualDeliverDate <= s.promisedDate THEN 1 END) AS OntimeDelivery,
+       COUNT(CASE WHEN s.ActualDeliverDate > s.promisedDate THEN 1 END) AS DelayedDelivery,
+       ROUND(
+           (COUNT(CASE WHEN s.ActualDeliverDate <= s.promisedDate THEN 1 END) * 100.0) / COUNT(*),
+           2
+       ) AS SuccessRate
+FROM partners p
+JOIN shipments s ON p.partner_ID = s.partner_ID
+GROUP BY p.partner_name
+ORDER BY DelayedDelivery ASC;
+```
+
+<p align="center">
+  <img src="outputs/Usecases_Outputs/SQL_query4.png" width="70%" />
+</p>
+
 ---
 
 ## Python – Social Media Content Sanitizer
@@ -181,14 +237,16 @@ A content moderation tool that filters harmful words and extracts links.
 * Summary report generation
 
 **Output:**
-* Social-Media Content sanitizer
-<p align="center"> <img src="outputs/Usecases_Outputs/python.png" width="70%" /> </p>
 
-> Demonstrates automation of content filtering and safety mechanisms 
+<p align="center">
+  <img src="outputs/Usecases_Outputs/python.png" width="70%" />
+</p>
+
+> Demonstrates automation of content filtering and safety mechanisms
 
 ---
 
-##  Project Structure
+## Project Structure
 
 ```
 /project-root
@@ -209,4 +267,3 @@ A content moderation tool that filters harmful words and extracts links.
 │
 └── README.md
 ```
-
