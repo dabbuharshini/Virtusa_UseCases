@@ -263,7 +263,7 @@ A content moderation tool that filters harmful words and extracts links.
 │
 ├── outputs/
 │   ├── Miniproject_Outputs/
-│   ├── Usecases_Outputs/
+│   ├── Usecase_Outputs/
 │
 └── README.md
 ```
